@@ -1,0 +1,18 @@
+{
+  "name": "sparta",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "automation test api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './src/test/service/register.js' --timeout 5000"
+  },
+  "author": "untoro",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "mocha": "^10.6.0",
+    "supertest": "^7.0.0"
+  }
+}
