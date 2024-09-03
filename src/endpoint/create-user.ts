@@ -2,7 +2,7 @@ import supertest from "supertest";
 import env from "dotenv";
 
 env.config();
-const request = supertest(process.env.BASE_URL);
+const request = supertest(process.env.BASE_URL!);
 
 export const createUser = request.post("/api/users")
   .set("Content-Type", "application/json")
@@ -12,5 +12,3 @@ export const createUser = request.post("/api/users")
       job: "leader"
     },
   );
-
-export default createUser;

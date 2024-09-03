@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import createUser from "../endpoint/create-user.js";
+import { createUser } from "../endpoint/create-user.js";
 
 describe("Register:", function () {
 

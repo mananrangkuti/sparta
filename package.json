@@ -3,16 +3,25 @@
   "version": "1.0.0",
   "type": "module",
   "description": "automation test api",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha './src/test/service/register.js' --timeout 5000"
+  "engines": {
+    "node": "^20.17.0",
+    "pnpm": "^8.15.4"
   },
-  "author": "untoro",
+  "scripts": {
+    "test": "NODE_OPTIONS='--no-warnings' mocha './src/service/register.ts'"
+  },
+  "author": "mananrangkuti",
   "license": "ISC",
   "devDependencies": {
+    "@types/bun": "^1.1.8",
+    "@types/chai": "^4.3.19",
+    "@types/mocha": "^10.0.7",
+    "@types/supertest": "^6.0.2",
     "chai": "^5.1.1",
     "dotenv": "^16.4.5",
     "mocha": "^10.6.0",
-    "supertest": "^7.0.0"
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }
